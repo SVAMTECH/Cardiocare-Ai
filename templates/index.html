@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CARDIOCARE AI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>CARDIOCARE AI</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="{{ url_for('about') }}" class="nav-item nav-link">About</a>
+                        <a href="{{ url_for('login') }}" class="nav-item nav-link">Login</a>
+                        <a href="{{ url_for('register') }}" class="nav-item nav-link">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important;"></h5>
+                    <h1 class="display-1 text-white mb-md-4">Acute Myocardial Infarction (AMI) Detection</h1>
+                    <div class="pt-2">
+                        <a href="{{ url_for('login') }}" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Login</a>
+                        <a href="{{ url_for('register') }}" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded" src="{{ url_for('static', filename='img/about.jpeg') }}" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="mb-4">
+                        <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Acute Myocardial Infarction (AMI)</h5>
+                        <h1 class="display-4">Introduction</h1>
+                    </div>
+                    <p>Cardiovascular diseases (CVDs) remain a leading cause of mortality worldwide, with acute myocardial infarction (AMI), commonly known as a heart attack, posing a significant threat to human health. Early detection and risk assessment of AMI are critical for timely intervention and improved patient outcomes. </p>
+                    <div class="row g-3 pt-3">
+                        <p>Leveraging advancements in machine learning, CardioCare AI aims to revolutionize the predictive assessment of AMI by utilizing vast medical datasets, including patient demographics, clinical history, laboratory results, and lifestyle factors. By employing robust machine learning algorithms, this system analyzes complex patterns and correlations that traditional methods often overlook, providing precise, data-driven insights for healthcare professionals. This innovative approach not only enhances diagnostic accuracy but also empowers proactive healthcare strategies, significantly reducing the burden of AMI on individuals and healthcare systems alike.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5"></h5>
+                <h1 class="display-4">About AMI</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <h4 class="mb-3">Definition and Pathophysiology</h4>
+                        <p class="m-0">Acute Myocardial Infarction (AMI), commonly referred to as a heart attack, occurs when blood flow to a part of the heart is obstructed, leading to the death of cardiac muscle cells. The primary cause is the rupture of an atherosclerotic plaque in the coronary artery, triggering thrombus (clot) formation. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        
+                        <h4 class="mb-3">Causes and Risk Factors</h4>
+                        <p class="m-0">AMI is predominantly caused by coronary artery disease (CAD), which is the buildup of fatty deposits in the arterial walls. Key risk factors include hypertension, high cholesterol, diabetes, smoking, obesity, and a sedentary lifestyle. Genetic predisposition and advancing age also play significant roles. Identifying these risk factors helps in preventive measures and risk stratification.                        </p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <h4 class="mb-3">Clinical Symptoms</h4>
+                        <p class="m-0">The classic symptoms of AMI include chest pain or discomfort, often described as a squeezing or pressure-like sensation, radiating to the arms, neck, jaw, or back. Other associated symptoms include shortness of breath, sweating, nausea, dizziness, and fatigue. In some cases, especially among women and diabetics, symptoms may be atypical.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <h4 class="mb-3">Diagnostic Approaches</h4>
+                        <p class="m-0">Diagnosis of AMI involves a combination of clinical evaluation, electrocardiography (ECG), and biomarker analysis. ECG helps detect ST-segment changes indicating myocardial injury. Cardiac biomarkers like troponin and creatine kinase-MB are critical for confirming myocardial cell damage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <h4 class="mb-3">Treatment and Management</h4>
+                        <p class="m-0"> Prompt treatment is essential to minimize heart muscle damage. Management strategies include reperfusion therapy, such as percutaneous coronary intervention (PCI) or thrombolytic therapy, to restore blood flow. Medications like antiplatelets, beta-blockers, statins, and ACE inhibitors are used to stabilize the condition and prevent recurrence. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <h4 class="mb-3"> Prevention and Prognosis</h4>
+                        <p class="m-0">Preventing AMI focuses on controlling modifiable risk factors through lifestyle changes like a healthy diet, regular exercise, and smoking cessation. Routine health screenings for blood pressure, cholesterol, and glucose levels are crucial. With timely intervention and effective management, the prognosis of AMI has significantly improved, although it remains a leading cause of mortality and morbidity globally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+  
+    <div class="container-fluid bg-dark text-light border-top border-secondary py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-primary" href="#">Acute Myocardial Infarction</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
