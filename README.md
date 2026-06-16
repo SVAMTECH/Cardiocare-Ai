@@ -136,7 +136,7 @@ Data-Science
 
 
 GitHub Repository:
-👉 https://github.com/GurumoorthysHub/Final-Year-Project.git
+👉https://github.com/SVAMTECH/Cardiocare-Ai.git
 
 
 [👨‍💻 Author]
