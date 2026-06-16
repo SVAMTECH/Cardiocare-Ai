@@ -141,9 +141,8 @@ GitHub Repository:
 
 [👨‍💻 Author]
 
-S Gurumoorthy
-Cloud & DevOps Enthusiast ☁️ | Passionate about Automation, Security, and Scalable Architecture
-📫 Connect on [LinkedIn](https://linkedin.com/in/gurumoorthy-s) | 🖥️ [!GitHub](https://github.com/GurumoorthysHub)
+AKASH Y V
+📫 Connect on [LinkedIn]( linkedin.com/in/akash-yv-6a022722a) | 🖥️ [!GitHub](github.com/SVAMTECH)
 
 
 
